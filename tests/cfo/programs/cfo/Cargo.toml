@@ -1,6 +1,7 @@
 [package]
+publish = ["arcium"]
 name = "cfo"
-version = "0.1.0"
+version = "0.1.1"
 description = "Created with Anchor"
 edition = "2021"
 
@@ -16,10 +17,10 @@ default = ["test"]
 test = []
 
 [dependencies]
-anchor-lang = { path = "../../../../lang" }
-anchor-spl = { path = "../../../../spl" }
+anchor-lang = { registry = "arcium", path = "../../../../lang" }
+anchor-spl = { registry = "arcium", path = "../../../../spl" }
 spl-token = { version = "3.5.0", features = ["no-entrypoint"] }
-swap = { path = "../../deps/swap/programs/swap", features = ["cpi"] }
-serum_dex = { path = "../../deps/openbook-dex/dex", features = ["no-entrypoint"] }
-registry = { path = "../../deps/stake/programs/registry", features = ["cpi"] }
-lockup = { path = "../../deps/stake/programs/lockup", features = ["cpi"] }
+swap = { registry = "arcium", path = "../../deps/swap/programs/swap", features = ["cpi"] }
+serum_dex = { registry = "arcium", path = "../../deps/openbook-dex/dex", features = ["no-entrypoint"] }
+registry = { registry = "arcium", path = "../../deps/stake/programs/registry", features = ["cpi"] }
+lockup = { registry = "arcium", path = "../../deps/stake/programs/lockup", features = ["cpi"] }

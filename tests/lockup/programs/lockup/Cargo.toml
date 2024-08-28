@@ -1,6 +1,7 @@
 [package]
+publish = ["arcium"]
 name = "lockup"
-version = "0.1.0"
+version = "0.1.1"
 description = "Created with Anchor"
 edition = "2021"
 
@@ -14,5 +15,5 @@ cpi = ["no-entrypoint"]
 default = []
 
 [dependencies]
-anchor-lang = { path = "../../../../lang" }
-anchor-spl = { path = "../../../../spl" }
+anchor-lang = { registry = "arcium", path = "../../../../lang" }
+anchor-spl = { registry = "arcium", path = "../../../../spl" }

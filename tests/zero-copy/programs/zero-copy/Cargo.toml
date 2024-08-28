@@ -1,6 +1,7 @@
 [package]
+publish = ["arcium"]
 name = "zero-copy"
-version = "0.1.0"
+version = "0.1.1"
 description = "Created with Anchor"
 edition = "2021"
 
@@ -17,9 +18,9 @@ test-sbf = []
 idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
-anchor-lang = { path = "../../../../lang" }
+anchor-lang = { registry = "arcium", path = "../../../../lang" }
 bytemuck = {version = "1.4.0", features = ["derive", "min_const_generics"]}
 
 [dev-dependencies]
-anchor-client = { path = "../../../../client", features = ["debug", "async"] }
+anchor-client = { registry = "arcium", path = "../../../../client", features = ["debug", "async"] }
 solana-program-test = "1.17.3"

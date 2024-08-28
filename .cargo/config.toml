@@ -1,0 +1,2 @@
+[registries]
+arcium = { index = "sparse+http://crates.arcium.com/api/v1/crates/", credential-provider = ["cargo:token"], token = "DrTfoOoPxpnisiRS6q7mnspozPykKApZ" }

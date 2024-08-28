@@ -1,6 +1,7 @@
 [package]
+publish = ["arcium"]
 name = "auction-house"
-version = "0.1.0"
+version = "0.1.1"
 edition = "2018"
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
@@ -17,8 +18,8 @@ default = []
 idl-build = ["anchor-lang/idl-build", "anchor-spl/idl-build"]
 
 [dependencies]
-anchor-lang = { path = "../../../../lang" }
-anchor-spl = { path = "../../../../spl", features = ["metadata"] }
+anchor-lang = { registry = "arcium", path = "../../../../lang" }
+anchor-spl = { registry = "arcium", path = "../../../../spl", features = ["metadata"] }
 spl-token = { version = "3.2",  features = ["no-entrypoint"] }
 spl-associated-token-account = { version = "1.1.1", features = ["no-entrypoint"] }
 thiserror = "1.0"
