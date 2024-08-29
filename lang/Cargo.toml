@@ -38,18 +38,18 @@ init-if-needed = ["anchor-derive-accounts/init-if-needed"]
 interface-instructions = ["anchor-attribute-program/interface-instructions"]
 
 [dependencies]
-anchor-attribute-access-control = { path = "./attribute/access-control", version = "0.30.2-alpha.0" }
-anchor-attribute-account = { path = "./attribute/account", version = "0.30.2-alpha.0" }
-anchor-attribute-constant = { path = "./attribute/constant", version = "0.30.2-alpha.0" }
-anchor-attribute-error = { path = "./attribute/error", version = "0.30.2-alpha.0" }
-anchor-attribute-event = { path = "./attribute/event", version = "0.30.2-alpha.0" }
-anchor-attribute-program = { path = "./attribute/program", version = "0.30.2-alpha.0" }
-anchor-derive-accounts = { path = "./derive/accounts", version = "0.30.2-alpha.0" }
-anchor-derive-serde = { path = "./derive/serde", version = "0.30.2-alpha.0" }
-anchor-derive-space = { path = "./derive/space", version = "0.30.2-alpha.0" }
+anchor-attribute-access-control = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-attribute-account = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-attribute-constant = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-attribute-error = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-attribute-event = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-attribute-program = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-derive-accounts = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-derive-serde = { registry = "arcium", version = "0.30.2-alpha.0" }
+anchor-derive-space = { registry = "arcium", version = "0.30.2-alpha.0" }
 
 # `anchor-lang-idl` should only be included with `idl-build` feature
-anchor-lang-idl = { path = "../idl", version = "0.30.2-alpha.0", optional = true }
+anchor-lang-idl = { registry = "arcium", version = "0.30.2-alpha.0", optional = true }
 
 base64 = "0.21"
 bincode = "1"

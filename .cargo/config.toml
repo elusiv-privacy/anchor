@@ -1,0 +1,2 @@
+[registries]
+arcium = { index = "", credential-provider = ["cargo:token"], token = "" }

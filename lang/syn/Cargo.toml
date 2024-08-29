@@ -6,6 +6,7 @@ repository = "https://github.com/coral-xyz/anchor"
 license = "Apache-2.0"
 description = "Anchor syntax parsing and code generation tools"
 edition = "2021"
+publish = ["arcium"]
 
 [package.metadata.docs.rs]
 all-features = true

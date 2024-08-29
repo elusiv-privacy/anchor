@@ -16,8 +16,8 @@ idl-build = ["anchor-syn/idl-build"]
 interface-instructions = ["anchor-syn/interface-instructions"]
 
 [dependencies]
-anchor-lang-idl = { path = "../../../idl", version = "0.30.2-alpha.0", features = ["convert"] }
-anchor-syn = { path = "../../syn", version = "0.30.2-alpha.0" }
+anchor-lang-idl = { registry = "arcium", version = "0.30.2-alpha.0", features = ["convert"] }
+anchor-syn = { registry = "arcium", version = "0.30.2-alpha.0" }
 anyhow = "1"
 bs58 = "0.5"
 heck = "0.3"
