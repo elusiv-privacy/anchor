@@ -6,6 +6,7 @@ repository = "https://github.com/coral-xyz/anchor"
 edition = "2021"
 license = "Apache-2.0"
 description = "Anchor framework IDL"
+publish = ["arcium"]
 
 [package.metadata.docs.rs]
 all-features = true

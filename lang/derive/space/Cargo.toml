@@ -6,6 +6,7 @@ repository = "https://github.com/coral-xyz/anchor"
 license = "Apache-2.0"
 description = "Anchor Derive macro to automatically calculate the size of a structure or an enum"
 edition = "2021"
+publish = ["arcium"]
 
 [lib]
 proc-macro = true

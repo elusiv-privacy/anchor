@@ -6,6 +6,7 @@ repository = "https://github.com/coral-xyz/anchor"
 license = "Apache-2.0"
 description = "Anchor Derive macro for serialization and deserialization"
 edition = "2021"
+publish = ["arcium"]
 
 [lib]
 proc-macro = true

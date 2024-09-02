@@ -6,6 +6,7 @@ edition = "2021"
 repository = "https://github.com/coral-xyz/anchor"
 description = "Anchor CLI"
 license = "Apache-2.0"
+publish = ["arcium"]
 
 [[bin]]
 name = "anchor"
