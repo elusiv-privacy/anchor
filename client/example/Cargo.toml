@@ -10,12 +10,12 @@ edition = "2021"
 async = ["anchor-client/async"]
 
 [dependencies]
-anchor-client = { path = "../", features = ["debug"] }
-basic-2 = { path = "../../examples/tutorial/basic-2/programs/basic-2", features = ["no-entrypoint"] }
-basic-4 = { path = "../../examples/tutorial/basic-4/programs/basic-4", features = ["no-entrypoint"] }
-composite = { path = "../../tests/composite/programs/composite", features = ["no-entrypoint"] }
-optional = { path = "../../tests/optional/programs/optional", features = ["no-entrypoint"] }
-events = { path = "../../tests/events/programs/events", features = ["no-entrypoint"] }
+anchor-client = { registry = "arcium", features = ["debug"] }
+basic-2 = { registry = "arcium", features = ["no-entrypoint"] }
+basic-4 = { registry = "arcium", features = ["no-entrypoint"] }
+composite = { registry = "arcium", features = ["no-entrypoint"] }
+optional = { registry = "arcium", features = ["no-entrypoint"] }
+events = { registry = "arcium", features = ["no-entrypoint"] }
 anyhow = "1.0.32"
 clap = { version = "4.2.4", features = ["derive"] }
 shellexpand = "2.1.0"

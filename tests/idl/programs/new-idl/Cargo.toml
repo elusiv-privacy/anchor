@@ -17,4 +17,4 @@ idl-build = ["anchor-lang/idl-build"]
 
 [dependencies]
 anchor-lang = { path = "../../../../lang" }
-external = { path = "../external", features = ["no-entrypoint"] }
+external = { registry = "arcium", features = ["no-entrypoint"] }

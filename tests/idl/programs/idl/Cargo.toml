@@ -20,4 +20,4 @@ default = []
 anchor-lang = { path = "../../../../lang" }
 anchor-spl = { path = "../../../../spl" }
 bytemuck = {version = "1.4.0", features = ["derive", "min_const_generics"] }
-external = { path = "../external", features = ["no-entrypoint"] }
+external = { registry = "arcium", features = ["no-entrypoint"] }
